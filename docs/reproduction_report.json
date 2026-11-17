@@ -1,0 +1,76 @@
+{
+  "status": "PASS",
+  "scientific_tables": [
+    {
+      "table": "per_family_metrics.csv",
+      "rows": 1920,
+      "numeric_and_categorical_values_match": true,
+      "CSV_bytes_match": true,
+      "sha256": "18e2ebd712fd2cebe6f7e766acc2d67707d29eebbf5a28ae00a0ed34aee008d6"
+    },
+    {
+      "table": "paired_effects.csv",
+      "rows": 348,
+      "numeric_and_categorical_values_match": true,
+      "CSV_bytes_match": true,
+      "sha256": "5085090c3147e28f00184546201d6b1d7e06b7bcc70b42a9e468625b266f4b90"
+    },
+    {
+      "table": "family_paired_differences.csv",
+      "rows": 2872,
+      "numeric_and_categorical_values_match": true,
+      "CSV_bytes_match": true,
+      "sha256": "10aacaa32c80bef20442cb7d1aadd97fe1cccbb2131dba0d85ca525bb787b9f3"
+    }
+  ],
+  "checks": {
+    "panel_certificates_checked": 960,
+    "panel_variants_checked": 480,
+    "broader_reference_labels_checked": 7680,
+    "active_inputs_with_both_rules_verified": 3840,
+    "native_archive_rows_checked": 1008,
+    "certificate_counts": {
+      "(3, 'SHORTCUT_RETURN_1_TO_1')": 1,
+      "(4, 'SHORTCUT_RETURN_1_TO_1')": 1,
+      "(5, 'CERT_1_TO_2')": 120,
+      "(6, 'CERT_1_TO_2')": 120,
+      "(3, 'CERT_1_TO_2')": 119,
+      "(4, 'CERT_1_TO_2')": 119
+    },
+    "native_archive_counts": {
+      "('NO_ONE_RULE_BOUND2_TO_K', 3)": 250,
+      "('NO_ONE_RULE_BOUND2_TO_K', 4)": 253,
+      "('CERTIFIED_MINIMUM2', 2)": 226,
+      "('NO_ONE_RULE_BOUND2_TO_K', 5)": 256,
+      "('ONE_RULE_SHORTCUT', 2)": 20,
+      "('ONE_RULE_SHORTCUT', 3)": 3
+    },
+    "worked_case": {
+      "family_id": "5afeb1c4a228abe8751d0aff13ea1896ea3907e961e175fc43f83b5e0168e88c",
+      "verified": true,
+      "reference_identity_output": "iyxbdc",
+      "shortcut_output": "iyxdcdc",
+      "separation_minimum_by_base": {
+        "3": 1,
+        "4": 1,
+        "5": 2
+      },
+      "selection": "Unique certificate-defined shortcut-return family; no model outcomes used."
+    }
+  },
+  "scored_requests": 1920,
+  "paired_effect_rows": 348,
+  "common_certified_family_count": 119,
+  "new_observation_counts": {
+    "rows": 1440,
+    "EOS": 544,
+    "tokens": 10268836,
+    "unparseable": 899,
+    "CAP": 896
+  },
+  "numpy_version": "1.26.4",
+  "CPU_elapsed_seconds": 5.75851109996438,
+  "model_or_GPU_calls": 0,
+  "original_raw_JSON_byte_layout_reconstructed": false,
+  "normalization_scope": "Scientific contents and score tables are reproduced from the normalized observations."
+}

@@ -1,0 +1,983 @@
+{
+  "format": "program-structure-research-artifact-v1",
+  "title": "When Is Program Structure Required? Certificate-Grounded Calibration of Program-Induction Difficulty",
+  "version": "1.0.0",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "size_bytes": 101,
+      "sha256": "29fb7f5919853985866fca8a4ff261f0da5f945976a27e60c74660f1f45ed354"
+    },
+    {
+      "path": ".gitignore",
+      "size_bytes": 58,
+      "sha256": "1677f2455eb0f734853031f0963455bdcc6066bd00f16b731ddb17c97f95b105"
+    },
+    {
+      "path": "CITATION.cff",
+      "size_bytes": 665,
+      "sha256": "7dd67b73404b72db532b8420cd2ade2dd0fcfdb7b3cf3807cdd435d16ed02fa0"
+    },
+    {
+      "path": "code/canonical_readouts_v1.py",
+      "size_bytes": 4513,
+      "sha256": "793af7b98682cb57b5efc47b5b534e86ef90725f7c3269b4fc098d76778126a6",
+      "cohort": [
+        "example_count_panel"
+      ],
+      "count_base": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "models": [
+        "Qwen3-8B",
+        "Olmo-3-7B-Think"
+      ],
+      "replay_entrypoint": "python -B reproduce.py --out replay",
+      "reproduces": [
+        "saved_output_count_panel_evaluation"
+      ],
+      "limitations": []
+    },
+    {
+      "path": "code/family_statistics.py",
+      "size_bytes": 854,
+      "sha256": "2dd50ccb2d0e3819efa79e075573d8ce799ceb18011a9ba6229e0bc4bd095a83",
+      "cohort": [
+        "example_count_panel"
+      ],
+      "count_base": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "models": [
+        "Qwen3-8B",
+        "Olmo-3-7B-Think"
+      ],
+      "replay_entrypoint": "python -B reproduce.py --out replay",
+      "reproduces": [
+        "saved_output_count_panel_evaluation"
+      ],
+      "limitations": []
+    },
+    {
+      "path": "code/frozen/analyze_panel.py",
+      "size_bytes": 8111,
+      "sha256": "b6be13e25962d341bc24286c9d42b688487de49c62509598add793baa66d57aa",
+      "cohort": [
+        "example_count_panel"
+      ],
+      "count_base": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "models": [
+        "Qwen3-8B",
+        "Olmo-3-7B-Think"
+      ],
+      "replay_entrypoint": "python -B reproduce.py --out replay",
+      "reproduces": [
+        "archived_scoring_and_analysis_source"
+      ],
+      "limitations": [
+        "Called through portable normalized-data adapters; original operational run layout is not restored."
+      ]
+    },
+    {
+      "path": "code/frozen/functional_score.py",
+      "size_bytes": 1576,
+      "sha256": "b1fffcb1ec769693cd6100423d9ba3030ce1976674e62a1c9e0cb2cf6ccee904",
+      "cohort": [
+        "example_count_panel"
+      ],
+      "count_base": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "models": [
+        "Qwen3-8B",
+        "Olmo-3-7B-Think"
+      ],
+      "replay_entrypoint": "python -B reproduce.py --out replay",
+      "reproduces": [
+        "archived_scoring_and_analysis_source"
+      ],
+      "limitations": [
+        "Called through portable normalized-data adapters; original operational run layout is not restored."
+      ]
+    },
+    {
+      "path": "code/frozen/PBEBench_functional_correctness.py",
+      "size_bytes": 24616,
+      "sha256": "db8ab01ef70be0c4ad34610045be4c6f6adad03977921efefc16260382901322",
+      "cohort": [
+        "example_count_panel"
+      ],
+      "count_base": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "models": [
+        "Qwen3-8B",
+        "Olmo-3-7B-Think"
+      ],
+      "replay_entrypoint": "python -B reproduce.py --out replay",
+      "reproduces": [
+        "archived_scoring_and_analysis_source"
+      ],
+      "limitations": [
+        "Called through portable normalized-data adapters; original operational run layout is not restored."
+      ]
+    },
+    {
+      "path": "code/frozen/PBEBench_primitives.py",
+      "size_bytes": 4390,
+      "sha256": "9d68d96f6a86413f1f5849a4f589bc7ea009e5987555d7f14308bb851e92c043",
+      "cohort": [
+        "example_count_panel"
+      ],
+      "count_base": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "models": [
+        "Qwen3-8B",
+        "Olmo-3-7B-Think"
+      ],
+      "replay_entrypoint": "python -B reproduce.py --out replay",
+      "reproduces": [
+        "archived_scoring_and_analysis_source"
+      ],
+      "limitations": [
+        "Called through portable normalized-data adapters; original operational run layout is not restored."
+      ]
+    },
+    {
+      "path": "code/frozen/PBEBench_utils.py",
+      "size_bytes": 215,
+      "sha256": "418c27074bdcad4a3a3a1ff3a532b0ee7e9f46a2f5d41cf6da7908e5b8673b90",
+      "cohort": [
+        "example_count_panel"
+      ],
+      "count_base": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "models": [
+        "Qwen3-8B",
+        "Olmo-3-7B-Think"
+      ],
+      "replay_entrypoint": "python -B reproduce.py --out replay",
+      "reproduces": [
+        "archived_scoring_and_analysis_source"
+      ],
+      "limitations": [
+        "Called through portable normalized-data adapters; original operational run layout is not restored."
+      ]
+    },
+    {
+      "path": "code/native_score.py",
+      "size_bytes": 8581,
+      "sha256": "3174025e5904cbd7a5f5f31385facd6a2fb7e4c64d4f857a3e1381fe792c3425",
+      "cohort": [
+        "example_count_panel"
+      ],
+      "count_base": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "models": [
+        "Qwen3-8B",
+        "Olmo-3-7B-Think"
+      ],
+      "replay_entrypoint": "python -B reproduce.py --out replay",
+      "reproduces": [
+        "saved_output_count_panel_evaluation"
+      ],
+      "limitations": []
+    },
+    {
+      "path": "data/analysis_contract.json",
+      "size_bytes": 2169,
+      "sha256": "4a6991cad6350c7c6fb29c5b0a9d8f0929f3e4b0149f9c05b720970b801ee1cd",
+      "cohort": [
+        "example_count_panel"
+      ],
+      "count_base": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "models": [
+        "Qwen3-8B",
+        "Olmo-3-7B-Think"
+      ],
+      "replay_entrypoint": "python -B reproduce.py --out replay",
+      "reproduces": [
+        "saved_output_count_panel_evaluation"
+      ],
+      "limitations": []
+    },
+    {
+      "path": "data/base_variants.jsonl",
+      "size_bytes": 965314,
+      "sha256": "9cd4c40b7a1468a699c40a6aacda61e73e507868d2b9cf02ad98cbbda89006d1",
+      "cohort": [
+        "example_count_panel"
+      ],
+      "count_base": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "models": [],
+      "replay_entrypoint": "python -B reproduce.py --out replay",
+      "reproduces": [
+        "960_arm_certificates",
+        "480_paired_base_variants"
+      ],
+      "limitations": []
+    },
+    {
+      "path": "data/broader_inputs.jsonl",
+      "size_bytes": 533575,
+      "sha256": "520948e896fa37c8d0389b035ad84afc9a741a20c9e3ecf8173f49771b421fe5",
+      "cohort": [
+        "example_count_panel"
+      ],
+      "count_base": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "models": [],
+      "replay_entrypoint": "python -B reproduce.py --out replay",
+      "reproduces": [
+        "7680_reference_labels",
+        "3840_sequential_two_rule_activation_checks"
+      ],
+      "limitations": []
+    },
+    {
+      "path": "data/certificate_records.jsonl",
+      "size_bytes": 648598,
+      "sha256": "dab7802e8005f615c3b0f3c7dac92d34ffe547b2f9b8f55e1fcd101c4de5b850",
+      "cohort": [
+        "example_count_panel"
+      ],
+      "count_base": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "models": [],
+      "replay_entrypoint": "python -B reproduce.py --out replay",
+      "reproduces": [
+        "960_arm_certificates",
+        "480_paired_base_variants"
+      ],
+      "limitations": []
+    },
+    {
+      "path": "data/construction_audit.csv",
+      "size_bytes": 49640,
+      "sha256": "de6d2a61a2b518f8d04b0351b290a19d684c16a704d9aa8eec6cb2bf5bbd9ff9",
+      "cohort": [
+        "example_count_panel"
+      ],
+      "count_base": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "models": [],
+      "replay_entrypoint": "python -B reproduce.py --out replay",
+      "reproduces": [
+        "960_arm_certificates",
+        "480_paired_base_variants"
+      ],
+      "limitations": []
+    },
+    {
+      "path": "data/families.jsonl",
+      "size_bytes": 309171,
+      "sha256": "c6f7814d9085f597b81d310115cf42f03efe95f7c7cdec48cacdffb69b5198b7",
+      "cohort": [
+        "example_count_panel"
+      ],
+      "count_base": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "models": [],
+      "replay_entrypoint": "python -B reproduce.py --out replay",
+      "reproduces": [
+        "120_family_task_and_witness_specifications"
+      ],
+      "limitations": []
+    },
+    {
+      "path": "data/model_contract.json",
+      "size_bytes": 11284,
+      "sha256": "b33554033c16b56605bd384a885001d052b3a0e346487ade40b4ff9ff354466a",
+      "cohort": [
+        "example_count_panel"
+      ],
+      "count_base": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "models": [
+        "Qwen3-8B",
+        "Olmo-3-7B-Think"
+      ],
+      "replay_entrypoint": "none",
+      "reproduces": [
+        "pinned_inference_configuration_or_prompt"
+      ],
+      "limitations": [
+        "CPU replay does not regenerate model trajectories."
+      ]
+    },
+    {
+      "path": "data/native1008.csv",
+      "size_bytes": 387271,
+      "sha256": "76faa6b2f0f35874a840c11e1ef6cd3180d1665a856dc64e97293492a92a0343",
+      "cohort": [
+        "saved_archive"
+      ],
+      "count_base": [
+        5
+      ],
+      "models": [],
+      "replay_entrypoint": "python -B reproduce.py --out replay",
+      "reproduces": [
+        "1008_task_certificate_audit"
+      ],
+      "limitations": []
+    },
+    {
+      "path": "data/selected_programs.csv",
+      "size_bytes": 656183,
+      "sha256": "94ca7ea378fce2954520f6641505440257bbb1529257f36ea66fc37dd4892e67",
+      "cohort": [
+        "example_count_panel"
+      ],
+      "count_base": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "models": [
+        "Qwen3-8B",
+        "Olmo-3-7B-Think"
+      ],
+      "replay_entrypoint": "python -B reproduce.py --out replay",
+      "reproduces": [
+        "saved_output_count_panel_evaluation"
+      ],
+      "limitations": []
+    },
+    {
+      "path": "data/synthesis_instruction.txt",
+      "size_bytes": 938,
+      "sha256": "4fb7efda45f0beb0978934612eeeca36e73da3d87f4977c17dd5f4d386318f11",
+      "cohort": [
+        "example_count_panel"
+      ],
+      "count_base": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "models": [
+        "Qwen3-8B",
+        "Olmo-3-7B-Think"
+      ],
+      "replay_entrypoint": "none",
+      "reproduces": [
+        "pinned_inference_configuration_or_prompt"
+      ],
+      "limitations": [
+        "CPU replay does not regenerate model trajectories."
+      ]
+    },
+    {
+      "path": "data/trajectories.jsonl.gz",
+      "size_bytes": 26517321,
+      "sha256": "6d9c9af078d6ec25bb8f1e95894ed07dbd879c2e3d77b7dc5afe0081cf57ed7d",
+      "cohort": [
+        "example_count_panel"
+      ],
+      "count_base": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "models": [
+        "Qwen3-8B",
+        "Olmo-3-7B-Think"
+      ],
+      "replay_entrypoint": "python -B reproduce.py --out replay",
+      "reproduces": [
+        "saved_output_count_panel_evaluation"
+      ],
+      "limitations": [
+        "1,440 new records have rendered prompt text; 480 base-five records retain token IDs, reconstructed user text and hashes without that field.",
+        "Normalized observations; original raw runtime layouts are not restored."
+      ]
+    },
+    {
+      "path": "DATA_PROVENANCE.md",
+      "size_bytes": 2863,
+      "sha256": "cfbb1a9eaee0b3e3164af85a9d633943a49a8bedf9702f672dc9d9bf0749f062"
+    },
+    {
+      "path": "docs/asset-manifest.csv",
+      "size_bytes": 6107,
+      "sha256": "99eff1d2a2930b2e6ed202c23c8884b7ccf308314437701ac65b51f28b0972c0"
+    },
+    {
+      "path": "docs/figures/construction.pdf",
+      "size_bytes": 83247,
+      "sha256": "1224ffa9a3dfa361a7661a9fea3763250414cf84380e6cb7dc4e0c211ac9396f"
+    },
+    {
+      "path": "docs/figures/construction.png",
+      "size_bytes": 140513,
+      "sha256": "73c9776e67c7fdb2524682b4a4759aa2a319843c7a667b2429cad369799291e1"
+    },
+    {
+      "path": "docs/maintenance.md",
+      "size_bytes": 713,
+      "sha256": "04dc4dfb63794f4af98393c8e2e3eab59fe0d1fba1acf3fa18d18108b18502bf"
+    },
+    {
+      "path": "docs/release-manifest.json",
+      "size_bytes": 933,
+      "sha256": "ac0d5d76fc3df9f7159aaf279a1ef4de43aa0eda38e3aa53abc76ed8e011ea39"
+    },
+    {
+      "path": "docs/reproduction.md",
+      "size_bytes": 2195,
+      "sha256": "fa83a6b38ffa6a677dab1ec01a0a9ba7aff394a10ff9da14f1159f2069f83bac"
+    },
+    {
+      "path": "docs/reproduction_report.json",
+      "size_bytes": 2525,
+      "sha256": "4aaac315cc92a9c0b51198d8fe7285243940155f0b61913d4b8951573a47711d"
+    },
+    {
+      "path": "docs/result-map.csv",
+      "size_bytes": 2223,
+      "sha256": "ac8a29e02c895deddfd10c5fdb9192c420fb8c32fb7d07f39c5f0eecd9ff2351"
+    },
+    {
+      "path": "fixtures/end_to_end.json",
+      "size_bytes": 5396,
+      "sha256": "de641ad2106e9b1fdc9e64214f0938a20e02f230ba4db88291e9c6a60dda59cf",
+      "cohort": [
+        "figure1_worked_family"
+      ],
+      "count_base": [
+        5
+      ],
+      "models": [
+        "Qwen3-8B",
+        "Olmo-3-7B-Think"
+      ],
+      "replay_entrypoint": "python -B replay_fixture.py",
+      "reproduces": [
+        "one_rule_enumeration",
+        "two_rule_witness",
+        "saved_output_selection",
+        "displayed_and_new_input_execution"
+      ],
+      "limitations": []
+    },
+    {
+      "path": "licenses/PBEBench-MIT.txt",
+      "size_bytes": 1068,
+      "sha256": "7ee6673ea31294494031ee577102e866bcf6438280142f822f1497cd153543e1"
+    },
+    {
+      "path": "provenance/ANALYSIS_HISTORY.json",
+      "size_bytes": 4314,
+      "sha256": "9b8872616c8a65248574431a62ddf41338651b20af31edf1eb5689d517cf55ff",
+      "cohort": [
+        "original_validation"
+      ],
+      "count_base": [],
+      "models": [],
+      "replay_entrypoint": "none",
+      "reproduces": [
+        "historical_analysis_plan_transcription"
+      ],
+      "limitations": [
+        "Transcription of the earlier manuscript, not an original preregistration or bootstrap-index file."
+      ]
+    },
+    {
+      "path": "provenance/NORMALIZATION.json",
+      "size_bytes": 1289,
+      "sha256": "10c7e5e51c9b62b4c59f76bc90c2ece4813ababcc687394757f07359279e87ce",
+      "cohort": [
+        "historical_release_verification"
+      ],
+      "count_base": [],
+      "models": [],
+      "replay_entrypoint": "none",
+      "reproduces": [
+        "versioned_provenance_record"
+      ],
+      "limitations": [
+        "Retained record from a prior release; current execution logs are supplied separately to the authors."
+      ]
+    },
+    {
+      "path": "README.md",
+      "size_bytes": 2862,
+      "sha256": "4603d62cebc1f95ec4bb0cd3b1ec326bb92f2368881362b7096ecddaf191d45a"
+    },
+    {
+      "path": "RELEASE_SCOPE.txt",
+      "size_bytes": 1547,
+      "sha256": "3701acb093ac3e9e9a348f9aa954d4a586d5c9defecc74a585aff430572ec6f1"
+    },
+    {
+      "path": "replay_fixture.py",
+      "size_bytes": 5708,
+      "sha256": "4a35106cc2c0d8e84222c037ec56b6157b489fc91d2d19fd12e5a6c686216eb8",
+      "cohort": [
+        "figure1_worked_family"
+      ],
+      "count_base": [
+        5
+      ],
+      "models": [
+        "Qwen3-8B",
+        "Olmo-3-7B-Think"
+      ],
+      "replay_entrypoint": "python -B replay_fixture.py",
+      "reproduces": [
+        "one_rule_enumeration",
+        "two_rule_witness",
+        "saved_output_selection",
+        "displayed_and_new_input_execution"
+      ],
+      "limitations": []
+    },
+    {
+      "path": "reproduce.py",
+      "size_bytes": 16662,
+      "sha256": "91998c900c54b85fd13551014abc16038de947c7741fea192309bf26edce2fb5",
+      "cohort": [
+        "example_count_panel"
+      ],
+      "count_base": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "models": [
+        "Qwen3-8B",
+        "Olmo-3-7B-Think"
+      ],
+      "replay_entrypoint": "python -B reproduce.py --out replay",
+      "reproduces": [
+        "saved_output_count_panel_evaluation"
+      ],
+      "limitations": []
+    },
+    {
+      "path": "requirements.txt",
+      "size_bytes": 15,
+      "sha256": "99f43573522565d7c480efd1f954892948033915df6a4e685327e995d3396eb6",
+      "cohort": [
+        "release_documentation"
+      ],
+      "count_base": [],
+      "models": [],
+      "replay_entrypoint": "none",
+      "reproduces": [
+        "instructions_or_version_history"
+      ],
+      "limitations": []
+    },
+    {
+      "path": "results/base_only_solution_counts.csv",
+      "size_bytes": 43845,
+      "sha256": "868346768fdb71fa0c80c52beee3c09ab685f14fe70f968f2c302e6bed73f144",
+      "cohort": [
+        "example_count_panel"
+      ],
+      "count_base": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "models": [],
+      "replay_entrypoint": "python -B reproduce.py --out replay",
+      "reproduces": [
+        "960_arm_certificates",
+        "480_paired_base_variants"
+      ],
+      "limitations": []
+    },
+    {
+      "path": "results/broader_original_immutable.json",
+      "size_bytes": 162066,
+      "sha256": "db2c1c28672538d8144e8905bde9f885065d58fd4b20c7c302218372e8b2e30e",
+      "cohort": [
+        "original_validation"
+      ],
+      "count_base": [
+        5
+      ],
+      "models": [
+        "Qwen3-8B",
+        "Olmo-3-7B-Think",
+        "Phi-4-mini-reasoning"
+      ],
+      "replay_entrypoint": "none",
+      "reproduces": [
+        "recorded_original_broader_input_summary"
+      ],
+      "limitations": [
+        "Original uncertainty schedule retained as a summary; count-panel replay uses its own resampling schedule."
+      ]
+    },
+    {
+      "path": "results/BROADER_PANEL_READABLE.csv",
+      "size_bytes": 2275,
+      "sha256": "b2ed0a1e44acebb2c4c85e826be278a529bc9e72878cb8df6e7b2305d419bfc9",
+      "cohort": [
+        "example_count_panel"
+      ],
+      "count_base": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "models": [
+        "Qwen3-8B",
+        "Olmo-3-7B-Think"
+      ],
+      "replay_entrypoint": "python -B reproduce.py --out replay",
+      "reproduces": [
+        "saved_output_count_panel_evaluation"
+      ],
+      "limitations": []
+    },
+    {
+      "path": "results/family_paired_differences.csv",
+      "size_bytes": 322677,
+      "sha256": "10aacaa32c80bef20442cb7d1aadd97fe1cccbb2131dba0d85ca525bb787b9f3",
+      "cohort": [
+        "example_count_panel"
+      ],
+      "count_base": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "models": [
+        "Qwen3-8B",
+        "Olmo-3-7B-Think"
+      ],
+      "replay_entrypoint": "python -B reproduce.py --out replay",
+      "reproduces": [
+        "saved_output_count_panel_evaluation"
+      ],
+      "limitations": []
+    },
+    {
+      "path": "results/paired_effects.csv",
+      "size_bytes": 64158,
+      "sha256": "5085090c3147e28f00184546201d6b1d7e06b7bcc70b42a9e468625b266f4b90",
+      "cohort": [
+        "example_count_panel"
+      ],
+      "count_base": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "models": [
+        "Qwen3-8B",
+        "Olmo-3-7B-Think"
+      ],
+      "replay_entrypoint": "python -B reproduce.py --out replay",
+      "reproduces": [
+        "saved_output_count_panel_evaluation"
+      ],
+      "limitations": []
+    },
+    {
+      "path": "results/per_family_metrics.csv",
+      "size_bytes": 434378,
+      "sha256": "18e2ebd712fd2cebe6f7e766acc2d67707d29eebbf5a28ae00a0ed34aee008d6",
+      "cohort": [
+        "example_count_panel"
+      ],
+      "count_base": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "models": [
+        "Qwen3-8B",
+        "Olmo-3-7B-Think"
+      ],
+      "replay_entrypoint": "python -B reproduce.py --out replay",
+      "reproduces": [
+        "saved_output_count_panel_evaluation"
+      ],
+      "limitations": []
+    },
+    {
+      "path": "results/PRIMARY_PANEL_READABLE.csv",
+      "size_bytes": 1366,
+      "sha256": "16868778301c28cdb7441572059229e3610903cd426bad122cad2eeb33c09102",
+      "cohort": [
+        "example_count_panel"
+      ],
+      "count_base": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "models": [
+        "Qwen3-8B",
+        "Olmo-3-7B-Think"
+      ],
+      "replay_entrypoint": "python -B reproduce.py --out replay",
+      "reproduces": [
+        "saved_output_count_panel_evaluation"
+      ],
+      "limitations": []
+    },
+    {
+      "path": "verify_manifest.py",
+      "size_bytes": 1466,
+      "sha256": "ca7cd1faea2195c447c5d3596b125fd8bc93ff9a2db050403e71602c3f27ffb9",
+      "cohort": [],
+      "count_base": [],
+      "models": [],
+      "replay_entrypoint": "python -B verify_manifest.py",
+      "reproduces": [
+        "current_file_hashes_and_sizes"
+      ],
+      "limitations": []
+    },
+    {
+      "path": "worked_case.json",
+      "size_bytes": 9537,
+      "sha256": "6c80328e4c960f1b3a0d26d499cc7ef0d2e091203f48a18b6bc39988fd4851a5",
+      "cohort": [
+        "identity_constraint_worked_case"
+      ],
+      "count_base": [
+        3,
+        4,
+        5
+      ],
+      "models": [],
+      "replay_entrypoint": "python -B reproduce.py --out replay",
+      "reproduces": [
+        "shortcut_return_and_identity_constraint_certificate"
+      ],
+      "limitations": []
+    }
+  ],
+  "result_scope": {
+    "cpu_replay": {
+      "command": "python -B reproduce.py --out replay",
+      "trajectories": 1920,
+      "arm_certificates": 960,
+      "archive_tasks": 1008,
+      "broader_reference_targets": 7680,
+      "active_targets": 3840,
+      "csv_rows": {
+        "per_family_metrics.csv": 1920,
+        "paired_effects.csv": 348,
+        "family_paired_differences.csv": 2872
+      },
+      "model_inference_calls": 0
+    },
+    "original_tables_1_2": "Original adjusted intervals retained; Qwen/Olmo base-five point estimates are recovered in the count-panel replay.",
+    "figure1_fixture": {
+      "command": "python -B replay_fixture.py",
+      "saved_outputs": 4,
+      "family_selection": "Existing Figure 1 example; both models and both conditions at base five."
+    }
+  },
+  "unavailable_records": [
+    {
+      "artifact_id": "original_discovery_trajectories",
+      "artifact_path": null,
+      "sha256": null,
+      "bytes": null,
+      "cohort": [
+        "discovery"
+      ],
+      "count_base": [],
+      "models": [
+        "Qwen3-8B",
+        "Olmo-3-7B-Think"
+      ],
+      "status": "not_in_package",
+      "replay_entrypoint": "none",
+      "reproduces": [],
+      "limitations": [
+        "Aggregate discovery results and readout sensitivities are documented; original trajectories are absent."
+      ],
+      "documented_in": "Appendix B"
+    },
+    {
+      "artifact_id": "corrected_phi_trajectories",
+      "artifact_path": null,
+      "sha256": null,
+      "bytes": null,
+      "cohort": [
+        "original_validation"
+      ],
+      "count_base": [
+        5
+      ],
+      "models": [
+        "Phi-4-mini-reasoning"
+      ],
+      "status": "not_in_package",
+      "replay_entrypoint": "none",
+      "reproduces": [],
+      "limitations": [
+        "Original Phi outputs are absent; manuscript aggregates and protocols remain."
+      ],
+      "documented_in": "Appendices C/D/H/J"
+    },
+    {
+      "artifact_id": "attention_validation_raw_logs",
+      "artifact_path": null,
+      "sha256": null,
+      "bytes": null,
+      "cohort": [
+        "original_validation"
+      ],
+      "count_base": [
+        5
+      ],
+      "models": [
+        "Phi-4-mini-reasoning"
+      ],
+      "status": "not_in_package",
+      "replay_entrypoint": "none",
+      "reproduces": [],
+      "limitations": [
+        "Numerical check summaries are retained; raw validation logs are absent."
+      ],
+      "documented_in": "Appendix D"
+    },
+    {
+      "artifact_id": "timed_symbolic_search_records",
+      "artifact_path": null,
+      "sha256": null,
+      "bytes": null,
+      "cohort": [
+        "symbolic_search"
+      ],
+      "count_base": [
+        5
+      ],
+      "models": [
+        "symbolic_solver"
+      ],
+      "status": "not_in_package",
+      "replay_entrypoint": "none",
+      "reproduces": [],
+      "limitations": [
+        "Search protocol and aggregate tables are retained; original timed-search records are absent."
+      ],
+      "documented_in": "Section 5.4; Appendix I"
+    },
+    {
+      "artifact_id": "original_resampling_index_arrays",
+      "artifact_path": null,
+      "sha256": null,
+      "bytes": null,
+      "cohort": [
+        "original_validation"
+      ],
+      "count_base": [
+        5
+      ],
+      "models": [],
+      "status": "not_in_package",
+      "replay_entrypoint": "none",
+      "reproduces": [],
+      "limitations": [
+        "Original 50,000-resample index arrays are absent; reported intervals and the historical seed are documented."
+      ],
+      "documented_in": "Appendix E"
+    },
+    {
+      "artifact_id": "original_three_model_prefix_record_tables",
+      "artifact_path": null,
+      "sha256": null,
+      "bytes": null,
+      "cohort": [
+        "original_validation"
+      ],
+      "count_base": [
+        5
+      ],
+      "models": [
+        "Qwen3-8B",
+        "Olmo-3-7B-Think",
+        "Phi-4-mini-reasoning"
+      ],
+      "status": "not_in_package",
+      "replay_entrypoint": "none",
+      "reproduces": [],
+      "limitations": [
+        "Aggregate prefix results remain; Qwen/Olmo token IDs are provided, but the original three-model prefix record tables are absent."
+      ],
+      "documented_in": "Appendix J"
+    }
+  ]
+}

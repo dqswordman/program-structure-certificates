@@ -1,0 +1,29 @@
+{
+  "status": "ANONYMIZED_SCIENTIFIC_DATA",
+  "trajectory_count": 1920,
+  "public_reproduction_goal": "Recompute all 1920 per-request metric rows and all 348 paired-effect rows from archived text/programs and finite targets.",
+  "retained_scientific_fields": [
+    "input/output strings",
+    "reference rules",
+    "complete one-rule certificates",
+    "raw generated text",
+    "generated and prompt token IDs",
+    "selected final programs",
+    "model revisions",
+    "batch seeds",
+    "inference contract",
+    "family/bootstrap pairing"
+  ],
+  "removed_metadata": [
+    "absolute machine paths",
+    "operator and machine labels",
+    "operational timestamps",
+    "historical review records",
+    "environment/cache paths",
+    "forward-commit file layouts"
+  ],
+  "raw_byte_identity_claimed": false,
+  "original_forward_commits_reconstructed": false,
+  "original_scientific_tables_preserved": true,
+  "source_adaptation": "canonical_readouts_v1.py and the archived scientific source files are copied without changes. native_score.py extracts only the definitions used in the frozen native scoring path, verbatim, and supplies portable namespace bindings. family_statistics.py copies the frozen ci function verbatim. reproduce.py supplies portable normalized-data input/output."
+}

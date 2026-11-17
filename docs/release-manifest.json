@@ -1,0 +1,27 @@
+{
+  "title": "When Is Program Structure Required? Certificate-Grounded Calibration of Program-Induction Difficulty",
+  "author": "Wenzhang Du",
+  "affiliation": "Independent Researcher, China",
+  "version": "1.0.0",
+  "date": "2026-11-16",
+  "repository": "https://github.com/dqswordman/program-structure-certificates",
+  "frozen_tag": "v1.0.0",
+  "arxiv_id": null,
+  "arxiv_url": null,
+  "manuscript_sha256": "efc8e9c94d41ebfd31565321ae96f94ea86c91e925321d2a16c599ef8030fad0",
+  "arxiv_source_sha256": "e5151889675b146cc79f19118e8dfa66ec8b915c0063817398eb762dddb9062f",
+  "pages": 26,
+  "figures": 1,
+  "tables": 24,
+  "reproduction_report": "docs/reproduction_report.json",
+  "models": {
+    "M1": {
+      "repo_id": "Qwen/Qwen3-8B",
+      "revision": "b968826d9c46dd6066d109eabc6255188de91218"
+    },
+    "M2": {
+      "repo_id": "allenai/Olmo-3-7B-Think",
+      "revision": "d97e442d7cc678210054dbcc9b440894d62c89a4"
+    }
+  }
+}

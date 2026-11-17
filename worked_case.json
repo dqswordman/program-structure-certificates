@@ -1,0 +1,383 @@
+{
+  "family_id": "5afeb1c4a228abe8751d0aff13ea1896ea3907e961e175fc43f83b5e0168e88c",
+  "selection_rule": "The unique family with a legal one-to-one separation at both base counts 3 and 4 and a one-to-two certificate at base count 5; selection uses construction certificates only.",
+  "reference_program": [
+    "replace(\"f\", \"fdd\")",
+    "replace(\"db\", \"c\")"
+  ],
+  "reference_rule_pairs": [
+    [
+      "f",
+      "fdd"
+    ],
+    [
+      "db",
+      "c"
+    ]
+  ],
+  "displayed_witness_index": 1,
+  "displayed_control_witness": {
+    "input": "afba",
+    "output": "afdca",
+    "signature": [
+      4,
+      5,
+      2,
+      2,
+      1
+    ]
+  },
+  "displayed_separation_witness": {
+    "input": "fdbh",
+    "output": "fddch",
+    "signature": [
+      4,
+      5,
+      2,
+      2,
+      1
+    ]
+  },
+  "preserved_original_base_examples": [
+    {
+      "original_index": 0,
+      "input": "ej",
+      "output": "ej"
+    },
+    {
+      "original_index": 1,
+      "input": "zgz",
+      "output": "zgz"
+    },
+    {
+      "original_index": 2,
+      "input": "xfbe",
+      "output": "xfdce"
+    },
+    {
+      "original_index": 3,
+      "input": "xudau",
+      "output": "xudau"
+    },
+    {
+      "original_index": 4,
+      "input": "iyxbdc",
+      "output": "iyxbdc"
+    }
+  ],
+  "counts": {
+    "3": {
+      "base_original_indices": [
+        0,
+        1,
+        2
+      ],
+      "base_examples_in_display_order": [
+        {
+          "input": "ej",
+          "output": "ej"
+        },
+        {
+          "input": "xfbe",
+          "output": "xfdce"
+        },
+        {
+          "input": "zgz",
+          "output": "zgz"
+        }
+      ],
+      "certificate_status": "SHORTCUT_RETURN_1_TO_1",
+      "CONTROL": {
+        "arm": "CONTROL",
+        "base_count": 3,
+        "certificate_sha256": "efd2e388d27bf096afd713e34be20b913fe2baacd61aca96e3e1cc6c9b3ab990",
+        "complete_one_rule_enumeration": true,
+        "completeness_scope": "Fixed alphabet abcdefghijkuvwxyz; replace alpha1..3 beta0..3; nonidentity guarantees changed alpha input substring and nonempty beta output substring; all candidates exactly checked.",
+        "inputs": [
+          "ej",
+          "afba",
+          "xfbe",
+          "zgz"
+        ],
+        "minimum_length": 1,
+        "nonidentity_examples": 2,
+        "one_rule_count": 2,
+        "one_rule_solutions": [
+          [
+            "b",
+            "dc"
+          ],
+          [
+            "fb",
+            "fdc"
+          ]
+        ],
+        "outputs": [
+          "ej",
+          "afdca",
+          "xfdce",
+          "zgz"
+        ],
+        "sample_id": "5afeb1c4a228abe8751d0aff13ea1896ea3907e961e175fc43f83b5e0168e88c",
+        "two_rule_witness": null
+      },
+      "SEPARATION": {
+        "arm": "SEPARATION",
+        "base_count": 3,
+        "certificate_sha256": "43aa38b1d938d2c1dc3f8b649c4602b2874ebece937b9994702b9ede73f715d6",
+        "complete_one_rule_enumeration": true,
+        "completeness_scope": "Fixed alphabet abcdefghijkuvwxyz; replace alpha1..3 beta0..3; nonidentity guarantees changed alpha input substring and nonempty beta output substring; all candidates exactly checked.",
+        "inputs": [
+          "ej",
+          "fdbh",
+          "xfbe",
+          "zgz"
+        ],
+        "minimum_length": 1,
+        "nonidentity_examples": 2,
+        "one_rule_count": 1,
+        "one_rule_solutions": [
+          [
+            "b",
+            "dc"
+          ]
+        ],
+        "outputs": [
+          "ej",
+          "fddch",
+          "xfdce",
+          "zgz"
+        ],
+        "sample_id": "5afeb1c4a228abe8751d0aff13ea1896ea3907e961e175fc43f83b5e0168e88c",
+        "two_rule_witness": [
+          [
+            "f",
+            "fdd"
+          ],
+          [
+            "db",
+            "c"
+          ]
+        ]
+      }
+    },
+    "4": {
+      "base_original_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "base_examples_in_display_order": [
+        {
+          "input": "ej",
+          "output": "ej"
+        },
+        {
+          "input": "xudau",
+          "output": "xudau"
+        },
+        {
+          "input": "xfbe",
+          "output": "xfdce"
+        },
+        {
+          "input": "zgz",
+          "output": "zgz"
+        }
+      ],
+      "certificate_status": "SHORTCUT_RETURN_1_TO_1",
+      "CONTROL": {
+        "arm": "CONTROL",
+        "base_count": 4,
+        "certificate_sha256": "6866a15119dc4254a4e3811d72d231be772b6d4ac122007fdff76f6ea8ab2baf",
+        "complete_one_rule_enumeration": true,
+        "completeness_scope": "Fixed alphabet abcdefghijkuvwxyz; replace alpha1..3 beta0..3; nonidentity guarantees changed alpha input substring and nonempty beta output substring; all candidates exactly checked.",
+        "inputs": [
+          "ej",
+          "afba",
+          "xudau",
+          "xfbe",
+          "zgz"
+        ],
+        "minimum_length": 1,
+        "nonidentity_examples": 2,
+        "one_rule_count": 2,
+        "one_rule_solutions": [
+          [
+            "b",
+            "dc"
+          ],
+          [
+            "fb",
+            "fdc"
+          ]
+        ],
+        "outputs": [
+          "ej",
+          "afdca",
+          "xudau",
+          "xfdce",
+          "zgz"
+        ],
+        "sample_id": "5afeb1c4a228abe8751d0aff13ea1896ea3907e961e175fc43f83b5e0168e88c",
+        "two_rule_witness": null
+      },
+      "SEPARATION": {
+        "arm": "SEPARATION",
+        "base_count": 4,
+        "certificate_sha256": "2791a0b407b0b01f6489bb64ea8cca012d135a8a5029bc018cae8fdd33e161ea",
+        "complete_one_rule_enumeration": true,
+        "completeness_scope": "Fixed alphabet abcdefghijkuvwxyz; replace alpha1..3 beta0..3; nonidentity guarantees changed alpha input substring and nonempty beta output substring; all candidates exactly checked.",
+        "inputs": [
+          "ej",
+          "fdbh",
+          "xudau",
+          "xfbe",
+          "zgz"
+        ],
+        "minimum_length": 1,
+        "nonidentity_examples": 2,
+        "one_rule_count": 1,
+        "one_rule_solutions": [
+          [
+            "b",
+            "dc"
+          ]
+        ],
+        "outputs": [
+          "ej",
+          "fddch",
+          "xudau",
+          "xfdce",
+          "zgz"
+        ],
+        "sample_id": "5afeb1c4a228abe8751d0aff13ea1896ea3907e961e175fc43f83b5e0168e88c",
+        "two_rule_witness": [
+          [
+            "f",
+            "fdd"
+          ],
+          [
+            "db",
+            "c"
+          ]
+        ]
+      }
+    },
+    "5": {
+      "base_original_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "base_examples_in_display_order": [
+        {
+          "input": "ej",
+          "output": "ej"
+        },
+        {
+          "input": "xudau",
+          "output": "xudau"
+        },
+        {
+          "input": "xfbe",
+          "output": "xfdce"
+        },
+        {
+          "input": "zgz",
+          "output": "zgz"
+        },
+        {
+          "input": "iyxbdc",
+          "output": "iyxbdc"
+        }
+      ],
+      "certificate_status": "CERT_1_TO_2",
+      "CONTROL": {
+        "arm": "CONTROL",
+        "base_count": 5,
+        "certificate_sha256": "f8264b9dec1c0089b0d3cfe8e52dd24bf15f5a7298cac56ec05c63b165b0a0b7",
+        "complete_one_rule_enumeration": true,
+        "completeness_scope": "Fixed alphabet abcdefghijkuvwxyz; replace alpha1..3 beta0..3; nonidentity guarantees changed alpha input substring and nonempty beta output substring; all candidates exactly checked.",
+        "inputs": [
+          "ej",
+          "afba",
+          "xudau",
+          "xfbe",
+          "zgz",
+          "iyxbdc"
+        ],
+        "minimum_length": 1,
+        "nonidentity_examples": 2,
+        "one_rule_count": 1,
+        "one_rule_solutions": [
+          [
+            "fb",
+            "fdc"
+          ]
+        ],
+        "outputs": [
+          "ej",
+          "afdca",
+          "xudau",
+          "xfdce",
+          "zgz",
+          "iyxbdc"
+        ],
+        "sample_id": "5afeb1c4a228abe8751d0aff13ea1896ea3907e961e175fc43f83b5e0168e88c",
+        "two_rule_witness": null
+      },
+      "SEPARATION": {
+        "arm": "SEPARATION",
+        "base_count": 5,
+        "certificate_sha256": "e1075e5ea7ea4de467b19f6dfffdf946f075c006f8d4f2918498531cd043f24a",
+        "complete_one_rule_enumeration": true,
+        "completeness_scope": "Fixed alphabet abcdefghijkuvwxyz; replace alpha1..3 beta0..3; nonidentity guarantees changed alpha input substring and nonempty beta output substring; all candidates exactly checked.",
+        "inputs": [
+          "ej",
+          "fdbh",
+          "xudau",
+          "xfbe",
+          "zgz",
+          "iyxbdc"
+        ],
+        "minimum_length": 2,
+        "nonidentity_examples": 2,
+        "one_rule_count": 0,
+        "one_rule_solutions": [],
+        "outputs": [
+          "ej",
+          "fddch",
+          "xudau",
+          "xfdce",
+          "zgz",
+          "iyxbdc"
+        ],
+        "sample_id": "5afeb1c4a228abe8751d0aff13ea1896ea3907e961e175fc43f83b5e0168e88c",
+        "two_rule_witness": [
+          [
+            "f",
+            "fdd"
+          ],
+          [
+            "db",
+            "c"
+          ]
+        ]
+      }
+    }
+  },
+  "critical_identity_example": {
+    "input": "iyxbdc",
+    "reference_output": "iyxbdc",
+    "candidate_rule": [
+      "b",
+      "dc"
+    ],
+    "candidate_output": "iyxdcdc",
+    "effect": "The identity example excludes the one-rule candidate that satisfies both smaller separation specifications."
+  }
+}

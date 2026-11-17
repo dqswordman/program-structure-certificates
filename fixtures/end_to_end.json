@@ -1,0 +1,230 @@
+{
+  "purpose": "End-to-end replay of the existing Figure 1 family, selected by its role in the paper; uses both models and arms at base five, without choosing outputs by success.",
+  "sample_id": "3df6eadc4dcae8679ce01f44a61b27e1f3c0e18af27873213d79a240a74d904e",
+  "base_count": 5,
+  "reference_rule_pairs": [
+    [
+      "ex",
+      "azw"
+    ],
+    [
+      "wa",
+      "y"
+    ]
+  ],
+  "task_pair": {
+    "CONTROL": {
+      "inputs": [
+        "gud",
+        "czua",
+        "bwcied",
+        "dzexa",
+        "yf",
+        "iiiexa"
+      ],
+      "outputs": [
+        "gud",
+        "czua",
+        "bwcied",
+        "dzazy",
+        "yf",
+        "iiiazy"
+      ]
+    },
+    "SEPARATION": {
+      "inputs": [
+        "gud",
+        "czua",
+        "bwcied",
+        "dzexa",
+        "yf",
+        "wbawex"
+      ],
+      "outputs": [
+        "gud",
+        "czua",
+        "bwcied",
+        "dzazy",
+        "yf",
+        "wbayzw"
+      ]
+    }
+  },
+  "request_ids": [
+    "M1|3df6eadc4dcae8679ce01f44a61b27e1f3c0e18af27873213d79a240a74d904e|B5|CONTROL",
+    "M1|3df6eadc4dcae8679ce01f44a61b27e1f3c0e18af27873213d79a240a74d904e|B5|SEPARATION",
+    "M2|3df6eadc4dcae8679ce01f44a61b27e1f3c0e18af27873213d79a240a74d904e|B5|CONTROL",
+    "M2|3df6eadc4dcae8679ce01f44a61b27e1f3c0e18af27873213d79a240a74d904e|B5|SEPARATION"
+  ],
+  "expected": {
+    "status": "PASS",
+    "family": "3df6eadc4dcae8679ce01f44a61b27e1f3c0e18af27873213d79a240a74d904e",
+    "base_count": 5,
+    "certificates": {
+      "CONTROL": {
+        "complete_one_rule_solutions": [
+          [
+            "exa",
+            "azy"
+          ]
+        ],
+        "minimum_length": 1,
+        "two_rule_reference_passes": true
+      },
+      "SEPARATION": {
+        "complete_one_rule_solutions": [],
+        "minimum_length": 2,
+        "two_rule_reference_passes": true
+      }
+    },
+    "saved_outputs": {
+      "M1|3df6eadc4dcae8679ce01f44a61b27e1f3c0e18af27873213d79a240a74d904e|B5|SEPARATION": {
+        "selected_rules": null,
+        "legal_selected_program": false,
+        "targets": {
+          "displayed": {
+            "hits": 0,
+            "inputs": 6,
+            "all_pass": false
+          },
+          "common_nine": {
+            "hits": 0,
+            "inputs": 9,
+            "all_pass": false
+          },
+          "wholly_unshown_pair": {
+            "hits": 0,
+            "inputs": 2,
+            "all_pass": false
+          },
+          "uniform": {
+            "hits": 0,
+            "inputs": 32,
+            "all_pass": false
+          },
+          "active": {
+            "hits": 0,
+            "inputs": 32,
+            "all_pass": false
+          }
+        }
+      },
+      "M1|3df6eadc4dcae8679ce01f44a61b27e1f3c0e18af27873213d79a240a74d904e|B5|CONTROL": {
+        "selected_rules": [
+          [
+            "a",
+            "y"
+          ],
+          [
+            "e",
+            "a"
+          ],
+          [
+            "x",
+            "z"
+          ]
+        ],
+        "legal_selected_program": true,
+        "targets": {
+          "displayed": {
+            "hits": 4,
+            "inputs": 6,
+            "all_pass": false
+          },
+          "common_nine": {
+            "hits": 5,
+            "inputs": 9,
+            "all_pass": false
+          },
+          "wholly_unshown_pair": {
+            "hits": 1,
+            "inputs": 2,
+            "all_pass": false
+          },
+          "uniform": {
+            "hits": 11,
+            "inputs": 32,
+            "all_pass": false
+          },
+          "active": {
+            "hits": 5,
+            "inputs": 32,
+            "all_pass": false
+          }
+        }
+      },
+      "M2|3df6eadc4dcae8679ce01f44a61b27e1f3c0e18af27873213d79a240a74d904e|B5|SEPARATION": {
+        "selected_rules": [
+          [
+            "exa",
+            "azy"
+          ],
+          [
+            "wex",
+            "yzw"
+          ]
+        ],
+        "legal_selected_program": true,
+        "targets": {
+          "displayed": {
+            "hits": 6,
+            "inputs": 6,
+            "all_pass": true
+          },
+          "common_nine": {
+            "hits": 9,
+            "inputs": 9,
+            "all_pass": true
+          },
+          "wholly_unshown_pair": {
+            "hits": 2,
+            "inputs": 2,
+            "all_pass": true
+          },
+          "uniform": {
+            "hits": 32,
+            "inputs": 32,
+            "all_pass": true
+          },
+          "active": {
+            "hits": 0,
+            "inputs": 32,
+            "all_pass": false
+          }
+        }
+      },
+      "M2|3df6eadc4dcae8679ce01f44a61b27e1f3c0e18af27873213d79a240a74d904e|B5|CONTROL": {
+        "selected_rules": null,
+        "legal_selected_program": false,
+        "targets": {
+          "displayed": {
+            "hits": 0,
+            "inputs": 6,
+            "all_pass": false
+          },
+          "common_nine": {
+            "hits": 0,
+            "inputs": 9,
+            "all_pass": false
+          },
+          "wholly_unshown_pair": {
+            "hits": 0,
+            "inputs": 2,
+            "all_pass": false
+          },
+          "uniform": {
+            "hits": 0,
+            "inputs": 32,
+            "all_pass": false
+          },
+          "active": {
+            "hits": 0,
+            "inputs": 32,
+            "all_pass": false
+          }
+        }
+      }
+    },
+    "model_inference_calls": 0
+  }
+}

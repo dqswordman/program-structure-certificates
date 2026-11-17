@@ -1,0 +1,26 @@
+PROGRAM STRUCTURE CERTIFICATES | RESEARCH ARTIFACT v1.0.0
+
+The archive covers 120 synthetic task families, 480 paired base-count
+variants, 960 arm-specific certificates, 1,008 saved retrospective archive
+tasks, 7,680 wider evaluation targets, and 1,920 normalized model outputs.
+
+All trajectories retain generated text, generated and prompt token IDs, and
+the deterministic selected-program status. The base-three, four, and six
+records retain rendered prompts. The base-five records retain reconstructed
+user messages, prompt-text hashes, and the pinned model chat templates.
+
+The CPU entry points verify the file manifest, replay the Figure 1 example,
+recheck the certificates and reference labels, and reproduce the count-panel
+paired effects and family-level outcomes. The full replay uses Python 3.11+
+and NumPy. It reads saved model outputs with zero model or GPU calls.
+
+The paper also reports earlier discovery, corrected Phi, attention-validation,
+timed symbolic search, and three-model prefix analyses. For these analyses,
+the artifact inventory separates paper tables and protocols from underlying
+historical records marked not_in_package. The original resampling arrays are
+also listed there. The original adjusted intervals in the first two result
+tables use their historical resampling schedule. The count-panel replay
+recovers the Qwen and Olmo base-five point estimates.
+
+See docs/reproduction.md for commands and expected output, docs/result-map.csv
+for paper-to-artifact links, and DATA_PROVENANCE.md for source and reuse terms.

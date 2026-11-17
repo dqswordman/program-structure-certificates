@@ -1,0 +1,13 @@
+Infer a cascade of string-replacement rules that maps every input to its paired output.
+Apply each rule to every string in order, using Python str.replace semantics.
+Use only characters from abcdefghijkuvwxyz.
+The first argument must contain 1 to 3 characters; the second may contain 0 to 3 characters.
+Use at most 5 rules. Any functionally correct cascade is acceptable.
+You may reason before answering. Put your final answer in one fenced block labelled python.
+Inside that block write a Python list whose elements are strings. Each string must be a rule written as replace('a','b'), with two quoted arguments satisfying the limits above.
+For example, the serialization of one rule is:
+```python
+["replace('a','b')"]
+```
+This example shows notation only, not a proposed solution. Keep the order of your rules. Arrow notation, bare character pairs, and a list of output strings are not the requested rule-list format.
+Input-output pairs:

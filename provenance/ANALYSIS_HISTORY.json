@@ -1,0 +1,22 @@
+{
+  "record_type": "retained_historical_analysis_provenance",
+  "source": "v3 paper_source/appendix.tex, former Appendix E",
+  "source_sha256": "1bd3383fc790bba1f19176a180a4061e9f28659bf6f98689143f16bc45b22e91",
+  "historical_appendix_E_tex": "\\section{Statistical Analysis and Prespecified Criteria}\\label{app:prospective}\n\\subsection{Effect magnitude and statistical interpretation}\nWrite $\\widehat\\Delta=\\widehat\\theta_{\\Vis}$ and $\\widehat\\Gamma=\\widehat\\theta_{\\Com}$. Before inference, the analysis plan set a ten-percentage-point magnitude benchmark. It combined $\\widehat\\Delta\\leq-.10$ with a six-comparison upper interval endpoint below zero for completion cost, and $\\widehat\\Gamma\\geq+.10$ with a lower endpoint above zero for common-target benefit. A joint magnitude interpretation required both conditions in at least two models. Models with fewer than 12 visible successes over 240 outputs were designated support-limited.\n\nQwen and Olmo show common-nine changes of 7.50 and 9.17 percentage points, with adjusted intervals $[1.67,14.17]$ and $[3.33,16.67]$. Both intervals exclude zero and span the predeclared ten-point benchmark. Both point estimates fall below that magnitude criterion. We evaluate the $H_2$ target with its specified three-model comparison family.\n\nMarginal 95\\% intervals for visible/common differences are $[-55.00,-37.50]$/$[3.33,12.50]$ for Qwen, $[-40.83,-20.83]$/$[4.17,15.00]$ for Olmo, and $[-6.67,1.67]$/$[0,2.50]$ for corrected Phi. The main primary table retains the original six-comparison intervals.\n\n\\subsection{Exact paired-binary sensitivity}\nWe also compute exact paired-binary tests for the six original contrasts. Let $g$ and $\\ell$ count separation-only and control-only successes. Under independent paired sampling and paired marginal symmetry, $g\\mid(g+\\ell)$ is $\\operatorname{Binomial}(g+\\ell,1/2)$. We use a two-sided exact tail test and $\\min(1,6p)$ \\citep{mcnemar1947,dror2018}. These tests complement the planned percentile bootstrap.\n\n\\begin{table}[htbp]\n\\centering\\smalltable{tables/exact.tex}\n\\caption{Exact paired-binary tests for the six primary contrasts. Gain and loss denote separation-only and control-only successes.}\n\\label{tab:exact}\n\\end{table}\n\nFor common-nine, Qwen has nine gains and zero losses, giving $p=2/2^9=.00390625$ and corrected $p=.0234375$. Olmo has eleven gains and zero losses, giving $p=.0009765625$ and corrected $p=.005859375$. Phi has one gain.\n\n\\subsection{Supplemental uncertainty and chronology}\nSupplemental evaluation designs were finalized after the original model generation and before supplemental scoring. They specify the additional-input generator, solver order, alternative selectors, and analysis targets. $H_2$ uses the archived 50,000 family resamples with quantiles $1/120,119/120$ for three approximate simultaneous intervals. Its marginal intervals are $[4.17,15.00]$, $[6.67,17.50]$, and $[-2.50,2.50]$ points for Qwen, Olmo, and Phi. The primary six-comparison and supplemental three-comparison families each use their respective adjustments.\n\nThe remaining supplemental tables and curves report descriptive estimates or marginal intervals. Equal-token and fixed token-difference strata use recorded subset family IDs and saved 50,000-resample arrays. Strata with $n<12$ are reported as descriptive diagnostics. These analyses execute the saved original model outputs.\n\n",
+  "original_joint_magnitude_rule": {
+    "specified_before": "original independent validation model generation",
+    "completion_point_estimate_max": -0.1,
+    "completion_adjusted_interval_upper_endpoint": "below zero",
+    "common_target_point_estimate_min": 0.1,
+    "common_target_adjusted_interval_lower_endpoint": "above zero",
+    "minimum_models_satisfying_both": 2,
+    "support_limited_rule": "fewer than 12 visible successes over 240 outputs",
+    "observed_common_nine_gains_pp": {
+      "Qwen": 7.5,
+      "Olmo": 9.17
+    },
+    "joint_magnitude_rule_met": false
+  },
+  "current_presentation": "Appendix E.3 preserves the original magnitude interpretation in one sentence; estimates and uncertainty remain unchanged.",
+  "record_scope": "Historical manuscript transcription; not an original preregistration or a reconstructed bootstrap-index file."
+}

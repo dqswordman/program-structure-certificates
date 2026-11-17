@@ -1,0 +1,11 @@
+paper_location,page,result,input,command,output,verification_coverage
+Figure 1,2,Worked one-to-two task pair and four saved programs,"data/families.jsonl, data/base_variants.jsonl, fixtures/end_to_end.json",python -B replay_fixture.py,fixture JSON on standard output,CPU-verified
+Table 1,6,Original validation displayed completion and common-nine agreement,"data/trajectories.jsonl.gz, data/analysis_contract.json",python -B reproduce.py --out replay,"replay/paired_effects.csv, b=5",Qwen/Olmo point estimates. Earlier adjusted intervals and Phi appear as manuscript summaries.
+Table 2,6,Original isolated witness pair,"data/trajectories.jsonl.gz, data/analysis_contract.json",python -B reproduce.py --out replay,"replay/paired_effects.csv, unshown_pair_success at b=5",Qwen/Olmo point estimates. Earlier adjusted intervals and Phi appear as manuscript summaries.
+Table 3,7,Certified contrasts across base-example counts,"data/certificate_records.jsonl, data/trajectories.jsonl.gz",python -B reproduce.py --out replay,"replay/paired_effects.csv, results/PRIMARY_PANEL_READABLE.csv",CPU-verified
+Table 4,7,Uniform and rule-active paired changes,"data/broader_inputs.jsonl, data/trajectories.jsonl.gz",python -B reproduce.py --out replay,"replay/paired_effects.csv, results/BROADER_PANEL_READABLE.csv",CPU-verified
+Table 5,8,Bounded timed symbolic search,Historical solver protocol,,manuscript table,Documented historical summary
+Table 17,23,"Retrospective audit of the 1,008 task archive",data/native1008.csv,python -B reproduce.py --out replay,"replay/REPLAY_VALIDATION.json, native_archive_counts",CPU-verified
+Table 19,24,Qwen endpoint counts by example count,"data/base_variants.jsonl, data/trajectories.jsonl.gz",python -B reproduce.py --out replay,"replay/per_family_metrics.csv, replay/paired_effects.csv",CPU-verified
+Table 20,25,Olmo endpoint counts by example count,"data/base_variants.jsonl, data/trajectories.jsonl.gz",python -B reproduce.py --out replay,"replay/per_family_metrics.csv, replay/paired_effects.csv",CPU-verified
+Appendix K,21,Reproduction scope and repository contents,"MANIFEST.json, RELEASE_SCOPE.txt",python -B verify_manifest.py,manifest verification on standard output,Current file inventory

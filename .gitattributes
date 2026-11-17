@@ -1,0 +1,5 @@
+# Preserve manifest digests on checkout on all platforms.
+* -text
+*.gz -diff
+*.pdf -diff
+*.png -diff

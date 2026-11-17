@@ -1,0 +1,52 @@
+{
+  "program_language": {
+    "alphabet": "abcdefghijkuvwxyz",
+    "lhs_lengths": [
+      1,
+      2,
+      3
+    ],
+    "rhs_lengths": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "maximum_program_rules": 5,
+    "semantics": "Sequential Python str.replace, global non-overlapping replacement within each rule"
+  },
+  "model_labels": {
+    "M1": "Qwen3-8B",
+    "M2": "Olmo-3-7B-Think"
+  },
+  "generated_token_limit": 8192,
+  "family_count": 120,
+  "base_counts": [
+    3,
+    4,
+    5,
+    6
+  ],
+  "new_trajectories": 1440,
+  "cached_base5_trajectories": 480,
+  "generation_seed_unit": "batch",
+  "selection": "Last complete eligible Python fence after the closed thinking delimiter; fall back to last complete list when no fence exists; fixed canonical rule notation mapping",
+  "statistics": {
+    "independent_unit": "family",
+    "bootstrap_replicates": 20000,
+    "rng": "NumPy PCG64",
+    "seed": 20261107,
+    "primary_cohort": "CERT_1_TO_2, separately at each base count",
+    "cross_base_cohort": "The 119 families certified at all four base counts",
+    "adjusted_comparisons": "Six model-by-new-base displayed-success differences in differences; Bonferroni percentile quantiles .05/12 and 1-.05/12",
+    "other_intervals": "Pointwise descriptive percentile intervals; quantiles .025 and .975"
+  },
+  "targets": {
+    "displayed": "The base-specific displayed specification",
+    "common9": "The original five base examples and both witness pairs; includes originally displayed examples",
+    "unshown_pair": "The two examples in the other witness pair, withheld from both conditions",
+    "original_unseen9": "Three originally unshown examples, excluding all original base examples and the displayed arm witness",
+    "broader": "32 UNIFORM and 32 ACTIVE inputs per family, fixed across all conditions and base counts"
+  },
+  "normalization": "Outcome text, generated token IDs, prompt token IDs, final selected programs, seeds and task identities are retained. Original machine paths, run timestamps and private operational metadata are removed. This package reconstructs scientific tables, not the original raw JSON byte layout or forward commits."
+}
