@@ -1,6 +1,8 @@
 # When Is Program Structure Required? Certificate-Grounded Calibration of Program-Induction Difficulty
 
-Wenzhang Du · Independent Researcher, China
+Wenzhang Du · Independent Researcher, China · arXiv preprint, November 2026
+
+[Paper · arXiv:2611.24975](https://arxiv.org/abs/2611.24975) · [Technical report](https://dqswordman.github.io/technical-reports/program-structure-certificates/) · [中文伴读](https://dqswordman.github.io/zh/technical-reports/program-structure-certificates/) · [Interactive Space](https://huggingface.co/spaces/DQSWORDMAN/program-structure-certificates)
 
 A generator can use two string-replacement rules even when the displayed examples admit a one-rule solution. This artifact follows a matched pair of specifications through complete one-rule enumeration, executable two-rule witnesses, and the programs returned by language models.
 
@@ -32,4 +34,4 @@ This reads **1,920 saved outputs**, checks **960 certificates** and **7,680 addi
 
 ## Citation
 
-Cite Wenzhang Du, *When Is Program Structure Required? Certificate-Grounded Calibration of Program-Induction Difficulty*, for the research. For the archived observations or CPU replay, cite the versioned research artifact described in [CITATION.cff](CITATION.cff). [Version record](docs/release-manifest.json)
+Cite Wenzhang Du, *When Is Program Structure Required? Certificate-Grounded Calibration of Program-Induction Difficulty*, arXiv:2611.24975 (2026). The [public release](PUBLICATION.md) lists the software and data licenses, the frozen revision and the [single offline download](https://github.com/dqswordman/program-structure-certificates/releases/download/v1.0.0/program-structure-certificates-v1.0.0.zip). [CITATION.cff](CITATION.cff) · [Version record](docs/release-manifest.json)

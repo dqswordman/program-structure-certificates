@@ -9,14 +9,47 @@
       "sha256": "29fb7f5919853985866fca8a4ff261f0da5f945976a27e60c74660f1f45ed354"
     },
     {
+      "path": ".github/workflows/publish-hugging-face.yml",
+      "role": "public_edition_material",
+      "size_bytes": 1546,
+      "sha256": "a5fef3cf1c9bb815456f0cfdf4ba9b923d63f7b9997f75aee2e273f35dd6c5e0"
+    },
+    {
       "path": ".gitignore",
       "size_bytes": 58,
       "sha256": "1677f2455eb0f734853031f0963455bdcc6066bd00f16b731ddb17c97f95b105"
     },
     {
       "path": "CITATION.cff",
-      "size_bytes": 665,
-      "sha256": "7dd67b73404b72db532b8420cd2ade2dd0fcfdb7b3cf3807cdd435d16ed02fa0"
+      "size_bytes": 987,
+      "sha256": "76529e711e08377121c1448bf8c577e6cf25d99e4d1eb464a174a14588009b9e"
+    },
+    {
+      "path": "DATA_PROVENANCE.md",
+      "size_bytes": 3134,
+      "sha256": "b0d2c322230982d5d289b12dedadc3eff4f0bf4396908ba117811b0c5923407f"
+    },
+    {
+      "path": "LICENSE",
+      "role": "public_edition_material",
+      "size_bytes": 1068,
+      "sha256": "020893b24fb2a5b62d2d2748f65e569e31ab7b8eeb831b5e64bb7a57e544c104"
+    },
+    {
+      "path": "PUBLICATION.md",
+      "role": "public_edition_material",
+      "size_bytes": 2652,
+      "sha256": "2011e8cf78f537ef0f42257d0703e5ccf7927ec943b7f5153ca20f3d6470f476"
+    },
+    {
+      "path": "README.md",
+      "size_bytes": 3430,
+      "sha256": "5d58fa73ea81a4a8bdec1892a43783d86439f95973aabfd52e6ff5dab48c3bf3"
+    },
+    {
+      "path": "RELEASE_SCOPE.txt",
+      "size_bytes": 1547,
+      "sha256": "3701acb093ac3e9e9a348f9aa954d4a586d5c9defecc74a585aff430572ec6f1"
     },
     {
       "path": "code/canonical_readouts_v1.py",
@@ -63,56 +96,6 @@
         "saved_output_count_panel_evaluation"
       ],
       "limitations": []
-    },
-    {
-      "path": "code/frozen/analyze_panel.py",
-      "size_bytes": 8111,
-      "sha256": "b6be13e25962d341bc24286c9d42b688487de49c62509598add793baa66d57aa",
-      "cohort": [
-        "example_count_panel"
-      ],
-      "count_base": [
-        3,
-        4,
-        5,
-        6
-      ],
-      "models": [
-        "Qwen3-8B",
-        "Olmo-3-7B-Think"
-      ],
-      "replay_entrypoint": "python -B reproduce.py --out replay",
-      "reproduces": [
-        "archived_scoring_and_analysis_source"
-      ],
-      "limitations": [
-        "Called through portable normalized-data adapters; original operational run layout is not restored."
-      ]
-    },
-    {
-      "path": "code/frozen/functional_score.py",
-      "size_bytes": 1576,
-      "sha256": "b1fffcb1ec769693cd6100423d9ba3030ce1976674e62a1c9e0cb2cf6ccee904",
-      "cohort": [
-        "example_count_panel"
-      ],
-      "count_base": [
-        3,
-        4,
-        5,
-        6
-      ],
-      "models": [
-        "Qwen3-8B",
-        "Olmo-3-7B-Think"
-      ],
-      "replay_entrypoint": "python -B reproduce.py --out replay",
-      "reproduces": [
-        "archived_scoring_and_analysis_source"
-      ],
-      "limitations": [
-        "Called through portable normalized-data adapters; original operational run layout is not restored."
-      ]
     },
     {
       "path": "code/frozen/PBEBench_functional_correctness.py",
@@ -168,6 +151,56 @@
       "path": "code/frozen/PBEBench_utils.py",
       "size_bytes": 215,
       "sha256": "418c27074bdcad4a3a3a1ff3a532b0ee7e9f46a2f5d41cf6da7908e5b8673b90",
+      "cohort": [
+        "example_count_panel"
+      ],
+      "count_base": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "models": [
+        "Qwen3-8B",
+        "Olmo-3-7B-Think"
+      ],
+      "replay_entrypoint": "python -B reproduce.py --out replay",
+      "reproduces": [
+        "archived_scoring_and_analysis_source"
+      ],
+      "limitations": [
+        "Called through portable normalized-data adapters; original operational run layout is not restored."
+      ]
+    },
+    {
+      "path": "code/frozen/analyze_panel.py",
+      "size_bytes": 8111,
+      "sha256": "b6be13e25962d341bc24286c9d42b688487de49c62509598add793baa66d57aa",
+      "cohort": [
+        "example_count_panel"
+      ],
+      "count_base": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "models": [
+        "Qwen3-8B",
+        "Olmo-3-7B-Think"
+      ],
+      "replay_entrypoint": "python -B reproduce.py --out replay",
+      "reproduces": [
+        "archived_scoring_and_analysis_source"
+      ],
+      "limitations": [
+        "Called through portable normalized-data adapters; original operational run layout is not restored."
+      ]
+    },
+    {
+      "path": "code/frozen/functional_score.py",
+      "size_bytes": 1576,
+      "sha256": "b1fffcb1ec769693cd6100423d9ba3030ce1976674e62a1c9e0cb2cf6ccee904",
       "cohort": [
         "example_count_panel"
       ],
@@ -456,14 +489,15 @@
       ]
     },
     {
-      "path": "DATA_PROVENANCE.md",
-      "size_bytes": 2863,
-      "sha256": "cfbb1a9eaee0b3e3164af85a9d633943a49a8bedf9702f672dc9d9bf0749f062"
-    },
-    {
       "path": "docs/asset-manifest.csv",
       "size_bytes": 6107,
       "sha256": "99eff1d2a2930b2e6ed202c23c8884b7ccf308314437701ac65b51f28b0972c0"
+    },
+    {
+      "path": "docs/companion.json",
+      "role": "public_edition_material",
+      "size_bytes": 15203,
+      "sha256": "dbf82ff83cc84d124fa844ad26f1c406a1fb77c0dbb179a220bdc797c3b1624e"
     },
     {
       "path": "docs/figures/construction.pdf",
@@ -477,13 +511,25 @@
     },
     {
       "path": "docs/maintenance.md",
-      "size_bytes": 713,
-      "sha256": "04dc4dfb63794f4af98393c8e2e3eab59fe0d1fba1acf3fa18d18108b18502bf"
+      "size_bytes": 480,
+      "sha256": "0cd2ddf55a1cd2694e53c65dbb5d71260038a761e9316c169ff2abe9f6ab9be4"
     },
     {
       "path": "docs/release-manifest.json",
-      "size_bytes": 933,
-      "sha256": "ac0d5d76fc3df9f7159aaf279a1ef4de43aa0eda38e3aa53abc76ed8e011ea39"
+      "size_bytes": 1289,
+      "sha256": "116d011a6508cd55eb58b5668823bbd7d79501c1834754973d3d9a6ed5877604"
+    },
+    {
+      "path": "docs/report.en.md",
+      "role": "public_edition_material",
+      "size_bytes": 5955,
+      "sha256": "24d127dbe6800d8416b5dd35a53b6487b0faebba1caadb2d6e29d81de221a4e7"
+    },
+    {
+      "path": "docs/report.zh.md",
+      "role": "public_edition_material",
+      "size_bytes": 5633,
+      "sha256": "d944b594e45668eae6b82b63de1e6e69b1831774b6c55fa7d47d88913b2331b3"
     },
     {
       "path": "docs/reproduction.md",
@@ -524,6 +570,12 @@
       "limitations": []
     },
     {
+      "path": "licenses/CC-BY-4.0.txt",
+      "role": "public_edition_material",
+      "size_bytes": 18656,
+      "sha256": "9e5f1b3c610b9c2da5c313bf81d577a7d1acec686bdb0384edefa6df0f90cd94"
+    },
+    {
       "path": "licenses/PBEBench-MIT.txt",
       "size_bytes": 1068,
       "sha256": "7ee6673ea31294494031ee577102e866bcf6438280142f822f1497cd153543e1"
@@ -561,16 +613,6 @@
       "limitations": [
         "Retained record from a prior release; current execution logs are supplied separately to the authors."
       ]
-    },
-    {
-      "path": "README.md",
-      "size_bytes": 2862,
-      "sha256": "4603d62cebc1f95ec4bb0cd3b1ec326bb92f2368881362b7096ecddaf191d45a"
-    },
-    {
-      "path": "RELEASE_SCOPE.txt",
-      "size_bytes": 1547,
-      "sha256": "3701acb093ac3e9e9a348f9aa954d4a586d5c9defecc74a585aff430572ec6f1"
     },
     {
       "path": "replay_fixture.py",
@@ -634,6 +676,52 @@
       "limitations": []
     },
     {
+      "path": "results/BROADER_PANEL_READABLE.csv",
+      "size_bytes": 2275,
+      "sha256": "b2ed0a1e44acebb2c4c85e826be278a529bc9e72878cb8df6e7b2305d419bfc9",
+      "cohort": [
+        "example_count_panel"
+      ],
+      "count_base": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "models": [
+        "Qwen3-8B",
+        "Olmo-3-7B-Think"
+      ],
+      "replay_entrypoint": "python -B reproduce.py --out replay",
+      "reproduces": [
+        "saved_output_count_panel_evaluation"
+      ],
+      "limitations": []
+    },
+    {
+      "path": "results/PRIMARY_PANEL_READABLE.csv",
+      "size_bytes": 1366,
+      "sha256": "16868778301c28cdb7441572059229e3610903cd426bad122cad2eeb33c09102",
+      "cohort": [
+        "example_count_panel"
+      ],
+      "count_base": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "models": [
+        "Qwen3-8B",
+        "Olmo-3-7B-Think"
+      ],
+      "replay_entrypoint": "python -B reproduce.py --out replay",
+      "reproduces": [
+        "saved_output_count_panel_evaluation"
+      ],
+      "limitations": []
+    },
+    {
       "path": "results/base_only_solution_counts.csv",
       "size_bytes": 43845,
       "sha256": "868346768fdb71fa0c80c52beee3c09ab685f14fe70f968f2c302e6bed73f144",
@@ -676,29 +764,6 @@
       "limitations": [
         "Original uncertainty schedule retained as a summary; count-panel replay uses its own resampling schedule."
       ]
-    },
-    {
-      "path": "results/BROADER_PANEL_READABLE.csv",
-      "size_bytes": 2275,
-      "sha256": "b2ed0a1e44acebb2c4c85e826be278a529bc9e72878cb8df6e7b2305d419bfc9",
-      "cohort": [
-        "example_count_panel"
-      ],
-      "count_base": [
-        3,
-        4,
-        5,
-        6
-      ],
-      "models": [
-        "Qwen3-8B",
-        "Olmo-3-7B-Think"
-      ],
-      "replay_entrypoint": "python -B reproduce.py --out replay",
-      "reproduces": [
-        "saved_output_count_panel_evaluation"
-      ],
-      "limitations": []
     },
     {
       "path": "results/family_paired_differences.csv",
@@ -770,27 +835,46 @@
       "limitations": []
     },
     {
-      "path": "results/PRIMARY_PANEL_READABLE.csv",
-      "size_bytes": 1366,
-      "sha256": "16868778301c28cdb7441572059229e3610903cd426bad122cad2eeb33c09102",
-      "cohort": [
-        "example_count_panel"
-      ],
-      "count_base": [
-        3,
-        4,
-        5,
-        6
-      ],
-      "models": [
-        "Qwen3-8B",
-        "Olmo-3-7B-Think"
-      ],
-      "replay_entrypoint": "python -B reproduce.py --out replay",
-      "reproduces": [
-        "saved_output_count_panel_evaluation"
-      ],
-      "limitations": []
+      "path": "scripts/package_release.py",
+      "role": "public_edition_material",
+      "size_bytes": 2790,
+      "sha256": "acd2bf73ad435b0b05caf0b5973c0b74b183f5a50c0d3ea332c9a3ee492cedf3"
+    },
+    {
+      "path": "scripts/publish_space.py",
+      "role": "public_edition_material",
+      "size_bytes": 4877,
+      "sha256": "dcb96f0e9b77173746a38e9fb83ebc171254c30224a9ec406d89eb832026501d"
+    },
+    {
+      "path": "scripts/render_reports.py",
+      "role": "public_edition_material",
+      "size_bytes": 2111,
+      "sha256": "fa1a187dfedf43b0b8105aea1b6f914dfd9aba5ac04c6d3bf454146a85419bbc"
+    },
+    {
+      "path": "space/README.md",
+      "role": "public_edition_material",
+      "size_bytes": 1343,
+      "sha256": "c8320989b8b5ec9929bf4afb88a94452ac08e214465fc56d4c3007aadf8352cd"
+    },
+    {
+      "path": "space/explore.js",
+      "role": "public_edition_material",
+      "size_bytes": 1624,
+      "sha256": "4e7a3d712bf7a7747ac7dacefe2e19e69de14afcb4ae826de163bd7703ff7e9e"
+    },
+    {
+      "path": "space/index.html",
+      "role": "public_edition_material",
+      "size_bytes": 4363,
+      "sha256": "83eb2f50ff918ec1c88229d0c58cde76dc5b16776d8ac33323789a6da7930c8d"
+    },
+    {
+      "path": "space/style.css",
+      "role": "public_edition_material",
+      "size_bytes": 9253,
+      "sha256": "5071739230e76b4e928725ae3da566fa0a0cd5f0680b4a6b4a57d3785f13ce65"
     },
     {
       "path": "verify_manifest.py",
