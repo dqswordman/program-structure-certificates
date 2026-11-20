@@ -72,7 +72,20 @@ def prepare(dest, local_zip):
     if len(panel)!=8 or fixture["expected"]["certificates"]["SEPARATION"]["minimum_length"]!=2:
         raise ValueError("Unexpected explorer source records")
     dump(dest/"explorer.json",{"fixture":fixture,"panel":panel})
-    files = {f.relative_to(dest).as_posix():digest(f.read_bytes()) for f in sorted(dest.rglob("*")) if f.is_file()}
+    manifest_path = dest / "MANIFEST.json"
+    manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+    manifest["distribution"] = "Hugging Face static Space"
+    manifest["files"] = []
+    files = {}
+    for path in sorted(dest.rglob("*")):
+        if not path.is_file() or path == manifest_path:
+            continue
+        name = path.relative_to(dest).as_posix()
+        checksum = digest(path.read_bytes())
+        manifest["files"].append({"path": name, "size_bytes": path.stat().st_size, "sha256": checksum})
+        files[name] = checksum
+    dump(manifest_path, manifest)
+    files["MANIFEST.json"] = digest(manifest_path.read_bytes())
     dump(dest/"SNAPSHOT.json",{"github_commit":head,"github_repository":GITHUB,"frozen_release":{
         "name":ASSET,"bytes":len(blob),"sha256":digest(blob),"scientific_commit":FROZEN},"sha256":files})
     return head

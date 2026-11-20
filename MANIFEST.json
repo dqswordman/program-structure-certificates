@@ -843,8 +843,8 @@
     {
       "path": "scripts/publish_space.py",
       "role": "public_edition_material",
-      "size_bytes": 4877,
-      "sha256": "dcb96f0e9b77173746a38e9fb83ebc171254c30224a9ec406d89eb832026501d"
+      "size_bytes": 5419,
+      "sha256": "e0bae04da43d16062a0118f3c6aafd5b1744ebd70cada6db278288385950f5eb"
     },
     {
       "path": "scripts/render_reports.py",
