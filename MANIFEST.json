@@ -855,8 +855,8 @@
     {
       "path": "space/README.md",
       "role": "public_edition_material",
-      "size_bytes": 1343,
-      "sha256": "c8320989b8b5ec9929bf4afb88a94452ac08e214465fc56d4c3007aadf8352cd"
+      "size_bytes": 1337,
+      "sha256": "a26bbe7b397e2d5328857bb4122d6e215e372f7d9691de8121ffe631467dceb6"
     },
     {
       "path": "space/explore.js",

@@ -6,7 +6,7 @@ colorTo: gray
 sdk: static
 app_file: index.html
 license: other
-short_description: Paired program tasks, certificates and archived model outcomes
+short_description: Explore paired programs, certificates and model outcomes
 tags:
   - program-synthesis
   - reproducibility
