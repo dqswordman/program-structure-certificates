@@ -3,21 +3,23 @@ message: "If you use the task data or CPU replay, cite this artifact and the acc
 title: "When Is Program Structure Required? Certificate-Grounded Calibration of Program-Induction Difficulty"
 type: software
 license: MIT
-references:
-  - type: preprint
-    title: "When Is Program Structure Required? Certificate-Grounded Calibration of Program-Induction Difficulty"
-    authors:
-      - family-names: Du
-        given-names: Wenzhang
-    year: 2026
-    url: "https://arxiv.org/abs/2611.24975"
-    doi: "10.48550/arXiv.2611.24975"
+preferred-citation:
+  type: article
+  status: preprint
+  title: "When Is Program Structure Required? Certificate-Grounded Calibration of Program-Induction Difficulty"
+  authors:
+    - family-names: Du
+      given-names: Wenzhang
+  journal: arXiv
+  year: 2026
+  url: "https://arxiv.org/abs/2611.24975"
+  doi: "10.48550/arXiv.2611.24975"
 authors:
   - given-names: Wenzhang
     family-names: Du
     affiliation: "Independent Researcher, China"
 version: 1.0.0
-date-released: 2026-11-16
+date-released: 2026-11-20
 url: "https://github.com/dqswordman/program-structure-certificates/tree/v1.0.0"
 repository-code: "https://github.com/dqswordman/program-structure-certificates"
 keywords:
