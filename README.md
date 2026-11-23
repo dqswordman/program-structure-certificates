@@ -4,7 +4,7 @@ Wenzhang Du · Independent Researcher, China · arXiv preprint, November 2026
 
 [Paper · arXiv:2611.24975](https://arxiv.org/abs/2611.24975) · [Technical report](https://dqswordman.github.io/technical-reports/program-structure-certificates/) · [中文伴读](https://dqswordman.github.io/zh/technical-reports/program-structure-certificates/) · [Interactive Space](https://huggingface.co/spaces/DQSWORDMAN/program-structure-certificates)
 
-A generator can use two string-replacement rules even when the displayed examples admit a one-rule solution. This artifact follows a matched pair of specifications through complete one-rule enumeration, executable two-rule witnesses, and the programs returned by language models.
+Six demonstrations can be consistent with either a one-rule shortcut or a two-rule reference program. Change one example and test every legal single rule. This repository links that proof of minimum length to the programs two language models produced on the paired tasks and to their behavior on new strings.
 
 [Reproduction guide](docs/reproduction.md) · [Result map](docs/result-map.csv) · [Data provenance](DATA_PROVENANCE.md) · [Frozen artifact v1.0.0](https://github.com/dqswordman/program-structure-certificates/tree/v1.0.0)
 

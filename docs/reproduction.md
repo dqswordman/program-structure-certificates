@@ -2,6 +2,8 @@
 
 Use [v1.0.0](https://github.com/dqswordman/program-structure-certificates/tree/v1.0.0) for the frozen research artifact. Run the commands from the repository root.
 
+The quick check follows one paired task through the proof of minimum program length. The full replay compares the saved programs on displayed examples, hidden distinguishing pairs and new strings.
+
 ## Quick check
 
 Python 3.11 or newer suffices for both commands.

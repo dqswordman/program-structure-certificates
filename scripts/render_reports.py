@@ -13,7 +13,7 @@ def emit(locale):
 
     copy = source["locales"][locale]
     article = source["article"]
-    out = ["# " + copy["title"], f"Wenzhang Du · arXiv:2611.24975v1 · v{article['version']} · {article['published']}", copy["summary"]]
+    out = ["# " + copy["title"], f"Wenzhang Du · arXiv:2611.24975v1 · v{article['version']} · {article['updated']}", copy["summary"]]
     for part in source["sections"]:
         out.append("## " + local(part["title"]))
         out.extend(part["paragraphs"][locale])
